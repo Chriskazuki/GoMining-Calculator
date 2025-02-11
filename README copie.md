@@ -1,0 +1,2 @@
+# GoMining-Calculator
+ GoMining Calculator
