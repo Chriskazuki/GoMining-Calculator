@@ -1,0 +1,23 @@
+declare module 'react-tradingview-widget' {
+  import { ComponentType } from 'react';
+
+  export const Themes: {
+    LIGHT: string;
+    DARK: string;
+  };
+
+  interface TradingViewWidgetProps {
+    symbol?: string;
+    theme?: string;
+    width?: string | number;
+    height?: string | number;
+    locale?: string;
+    autosize?: boolean;
+    interval?: string;
+    style?: string | number;
+    // etc. - ajoutez selon vos besoins
+  }
+
+  const TradingViewWidget: ComponentType<TradingViewWidgetProps>;
+  export default TradingViewWidget;
+}
